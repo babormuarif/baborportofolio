@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Moh. Idris Muarif</title>
+    <link rel="stylesheet" href="../css/porto.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Moh. Idris Muarif</h1>
+    </header>
+
+    <div class="welcome">
+      <h2
+        style="
+          font-weight: bold;
+          font-family: Mint, Arial, sans-serif;
+          color: white;
+        "
+      >
+        Welcome!
+      </h2>
+      <p
+        style="
+          font-weight: bold;
+          font-family: Mint, Arial, sans-serif;
+          color: white;
+        "
+      >
+        Halo saya Moh. Idris Muarif.
+      </p>
+      <p
+        style="
+          font-weight: bold;
+          font-family: Mint, Arial, sans-serif;
+          color: white;
+        "
+      >
+        Saya adalah mahasiswa S1 Teknik Fisika ITS Surabaya
+      </p>
+    </div>
+
+    <div class="menu">
+      <a href="javascript:void(0);" onclick="showContent('proyek')">Proyek</a>
+      <a href="javascript:void(0);" onclick="showContent('pengalaman')"
+        >Pengalaman</a
+      >
+      <a href="javascript:void(0);" onclick="showContent('skill')">Skill</a>
+      <a href="javascript:void(0);" onclick="showContent('prestasi')"
+        >Prestasi</a
+      >
+    </div>
+
+    <!-- Tombol "Back to Menu Utama" pada setiap halaman -->
+    <div class="content" id="proyek">
+      <a href="javascript:void(0);" onclick="showWelcome()" class="back-button"
+        >Back to Menu Utama</a
+      >
+      <h2>Proyek</h2>
+      <p>Ini adalah halaman Proyek.</p>
+      <!-- Tambahkan elemen gambar dengan atribut src yang menunjukkan lokasi gambar -->
+      <img
+        src="file:///C:/Users/MOH.IDRIS%20MUARIF/Downloads/Acer_Wallpaper_02_5000x2813/Acer_Wallpaper_02_5000x2813.html"
+        alt="Gambar Proyek"
+        width="400"
+        height="300"
+      />
+    </div>
+
+    <div class="content" id="pengalaman">
+      <a href="javascript:void(0);" onclick="showWelcome()" class="back-button"
+        >Back to Menu Utama</a
+      >
+      <h2>Pengalaman Organisasi dan Kepanitian</h2>
+      <p>Ini adalah halaman Pengalaman.</p>
+    </div>
+
+    <div class="content" id="skill">
+      <a href="javascript:void(0);" onclick="showWelcome()" class="back-button"
+        >Back to Menu Utama</a
+      >
+      <h2>Soft Skill dan Hard Skill</h2>
+      <p>Ini adalah halaman Skill.</p>
+    </div>
+
+    <div class="content" id="prestasi">
+      <a href="javascript:void(0);" onclick="showWelcome()" class="back-button"
+        >Back to Menu Utama</a
+      >
+      <h2>Prestasi</h2>
+      <ul>
+        <li>
+          JUARA 2 LOMBA LUKIS KESEHATAN SE MADURA Tahun 2019 <br />Perlombaan
+          ini diadakan oleh kesmas dengan tema Kesehatan
+        </li>
+        <li>
+          JUARA 1 LOMBA BASKET SE MADURA MANSAS Tahun 2019 <br />Perlombaan ini
+          diadakan oleh MAN 1 Sumenep dengan even basket antar SMP dan SMA se
+          Madura.
+        </li>
+        <li>
+          JUARA 1 LOMBA BASKET SE MADURA KOBASMANSA Tahun 2019 <br />Perlombaan
+          ini diadakan oleh SMAN 1 Sumenep dengan even basket antar SMP dan SMA
+          se Madura.
+        </li>
+        <li>
+          JUARA 1 LOMBA BASKET SE MADURA LIBANJAR Tahun 2020 <br />Perlombaan
+          ini diadakan oleh MAN 1 Sumenep dengan even basket antar SMP dan SMA
+          se Madura.
+        </li>
+        <li>
+          MEDALI PERAK, KOMPETISI SAINS NASIONAL, POSI Tahun 2020
+          <br />Olimpiade sains Nasional yang diselenggarakan oleh Pelatihan
+          Olimpiade Sains Indonesia (POSI) merupakan pelatihan yang diadakan
+          setiap tahun dengan bidang sains seperti Matematika, Fisika, Kimia,
+          Biologi, dll.
+        </li>
+        <li>
+          MEDALI PERUNGGU, KOMPETISI SAINS PROVINSI, POSI Tahun 2021
+          <br />Olimpiade sains Provinsi yang diselenggarakan oleh Pelatihan
+          Olimpiade Sains Indonesia (POSI) merupakan pelatihan yang diadakan
+          setiap tahun dengan bidang sains seperti Matematika, Fisika, Kimia,
+          Biologi, dll.
+        </li>
+        <li>
+          HONORABLE MENTION, MADRASAH OLYMPIAD CONTEST, EDUKASI KAMPUS Tahun
+          2021 <br />Madrasah Olympiad Contest yang diselenggarakan oleh Edukasi
+          Kampus merupakan pelatihan yang diadakan setiap tahun dengan bidang
+          sains seperti Matematika, Fisika, Kimia, Biologi, dll.
+        </li>
+        <li>
+          MEDALI PERAK, NATIONAL SCIENCE COMPETITIONS, FOKSI Tahun 2021
+          <br />National Science Competitions yang diselenggarakan oleh Forum
+          Pecinta Kompetisi Sains Indramayu (FOKSI) merupakan olimpiade yang
+          diadakan setiap tahun dengan bidang sains seperti Matematika, Fisika,
+          Kimia, Biologi, dll.
+        </li>
+        <!-- Tambahkan daftar prestasi lainnya sesuai kebutuhan -->
+      </ul>
+    </div>
+
+    <script>
+      function showContent(sectionId) {
+        // Semua halaman frontend disembunyikan terlebih dahulu
+        var frontendSections = document.querySelectorAll(".content");
+        frontendSections.forEach(function (section) {
+          section.classList.remove("active");
+        });
+
+        // Halaman frontend yang dipilih ditampilkan
+        document.getElementById(sectionId).classList.add("active");
+      }
+
+      function showWelcome() {
+        // Semua halaman frontend disembunyikan terlebih dahulu
+        var frontendSections = document.querySelectorAll(".content");
+        frontendSections.forEach(function (section) {
+          section.classList.remove("active");
+        });
+
+        // Tampilkan halaman welcome
+        document.querySelector(".welcome").classList.add("active");
+      }
+    </script>
+  </body>
+</html>

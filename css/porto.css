@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Gaya CSS */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://th.bing.com/th/id/R.5ba52127b4ae8a8d2bf9b275197a259b?rik=B1boTP9EFKaufQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-Jq9bNNceVEU%2fUd00UzIvD8I%2fAAAAAAAAGKc%2f8O_mUXy7Ea4%2fs1600%2fbumi.jpg&ehk=VizKXZJ8v1yB4SpXBCeS2TvjlHQ0o33nxPPjPJrN6mE%3d&risl=&pid=ImgRaw&r=0");
+  /* Ganti 'planet_background.jpg' dengan gambar planet Anda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.welcome {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan */
+  color: white;
+}
+
+.menu {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Gaya tautan menu */
+.menu a {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Efek perubahan warna saat hover */
+}
+
+/* Gaya tautan menu saat hover */
+.menu a:hover {
+  background-color: #333;
+  color: #00ff00;
+}
+
+.content {
+  display: none;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333; /* Warna teks abu-abu tua */
+}
+
+/* Gaya halaman frontend yang aktif */
+.content.active {
+  display: block;
+}
+
+/* Gaya halaman Proyek */
+#proyek {
+  background-color: #004ba0; /* Warna latar belakang biru */
+  color: white; /* Warna teks putih */
+}
+
+/* Gaya halaman pengalaman */
+#pengalaman {
+  background-color: #ff6f61; /* Warna latar belakang merah */
+  color: white; /* Warna teks putih */
+}
+
+/* Gaya halaman Skill */
+#skill {
+  background-color: #00a896; /* Warna latar belakang hijau */
+  color: white; /* Warna teks putih */
+}
+
+/* Gaya halaman Prestasi */
+#prestasi {
+  background-color: #ffc857; /* Warna latar belakang kuning */
+  color: #333; /* Warna teks abu-abu tua */
+}
+
+/* Gaya tombol "Back to Menu Utama" */
+.back-button {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
